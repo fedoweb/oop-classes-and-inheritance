@@ -7,7 +7,7 @@ export default class Character {
         }
 
         if (!validValue.includes(type)) {
-            throw new Error('Тип персонажа должен быть одним из следующих: Bowman, Swordsman, Magician, Daemon, Undead, Zombie.');
+            throw new Error("Тип персонажа должен быть одним из следующих: Bowman, Swordsman, Magician, Daemon, Undead, Zombie.");
         }
         
         this.name = name;
@@ -15,5 +15,15 @@ export default class Character {
         this.health = 100;
         this.level = 1;
 
+        if(this.type === "Bowman" || this.type === "Undead") {
+            this.attack = 25;
+            this.defence = 25;
+        } else if (this.type === "Swordsman" || this.type === "Zombie") {
+            this.attack = 40;
+            this.defence = 10;
+        } else {
+            this.attack = 10;
+            this.defence = 40;
+        }
     }
 }
