@@ -1,6 +1,4 @@
-// TODO: write your code here
-import sum from './basic';
 
-console.log('worked');
+import { Bowman, Swordsman, Magician, Daemon, Undead, Zombie } from './characters/CharacterTypes';
 
-console.log(sum([1, 2]));
+
