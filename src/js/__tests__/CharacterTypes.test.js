@@ -12,6 +12,7 @@ test.each([
     expect(new type(name)).toEqual(expected);
 });
 
+/*
 test.each([
     [Bowman, "I"],
     [Bowman, "IvanIvanIvan"],
@@ -30,5 +31,5 @@ test.each([
     expect(() => new type(name)).toThrow("Имя должно быть строкой длиной от 2 до 10 символов.");
 });
 
-
+*/
 

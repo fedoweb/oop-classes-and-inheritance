@@ -3,7 +3,7 @@ import Character from "../characters/character";
 describe("testing Character class", () => {
   test("create character with valid name and type", () => {
     const character = new Character("Ivan", "Bowman");
-    expect(character).toEqual({ name: "Ivan", type: "Bowman", health: 100, level: 1, attack: 25, defence: 25});
+    expect(character).toEqual({ name: "Ivan", type: "Bowman", health: 100, level: 1 });
   });
 
   test ("throw an error for invalid name length < 2", () => {

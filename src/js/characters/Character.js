@@ -14,7 +14,10 @@ export default class Character {
         this.type = type;
         this.health = 100;
         this.level = 1;
+        //this.attack;
+        //this.defence;
 
+/*
         if(this.type === "Bowman" || this.type === "Undead") {
             this.attack = 25;
             this.defence = 25;
@@ -25,5 +28,7 @@ export default class Character {
             this.attack = 10;
             this.defence = 40;
         }
+
+*/
     }
 }
